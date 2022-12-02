@@ -1,0 +1,9 @@
+.header_social_img{
+    width: 2rem;
+}
+
+@media (max-width: 380px) {
+    .header_social_img{
+        width: 1.5rem;
+    }    
+}

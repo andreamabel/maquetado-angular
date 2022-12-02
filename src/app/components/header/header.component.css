@@ -1,0 +1,52 @@
+header{
+    height: 3.9rem;
+    /* background: transparent; */
+    color: white;
+    position: fixed;
+    width: 100%;
+    z-index: 20;
+    background: rgba(255, 192, 203, 0.576); 
+    outline: white solid 1px;
+}
+
+.header_container{
+    max-width: 90vw;
+    margin: 0 auto;
+}
+
+.container_logos{
+    gap: 4rem;
+}
+
+.header_hamburger:hover {
+    cursor: pointer;
+}
+
+.header_hamburger i{
+    display: none;
+    position: relative;
+    font-size: 1.6rem;
+    padding: 10px 0;
+    z-index: 2000;
+}
+
+@media (max-width: 800px) {
+    .header_hamburger i{
+        display: flex;
+    }
+}
+
+@media (max-width: 380px) {
+    .header_container{
+        max-width: 97vw;
+        /* margin: 0 auto; */
+    }
+
+    .container_logos{
+        gap: 2.5rem;
+    }
+
+    .header_hamburger i{
+        font-size: 1.5rem;
+    }
+}

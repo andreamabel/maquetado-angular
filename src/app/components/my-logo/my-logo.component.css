@@ -1,0 +1,75 @@
+/* NAV LOGO */
+
+.header_mylogo_container {
+    position: relative;
+    display: flex;
+    animation-name: rotacion;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+  }
+  
+  .header_mylogo_container:hover {
+    cursor: pointer;
+  }
+  
+  #header_mylogo {
+    width: 2rem;
+  }
+  
+  .header_mylogo_container::after{
+    content: "ANDREA";
+    color: white;
+    position: absolute;
+    right: 110%;
+    top: 19%;
+    font-size: 0.9rem;
+    /* background-color: aqua; */
+    /* animation-name: rotacion; */
+    /* animation-duration: 1.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite; */
+    font-weight: 500;
+  }
+  
+  .header_mylogo_container::before{
+    content: "MABEL";
+    color: white;
+    position: absolute;
+    left: 110%;
+    top: 19%;
+    font-size: 0.9rem;
+    /* animation-name: rotacion; */
+    /* animation-duration: 1.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite; */
+    font-weight: 500;
+  }
+  
+  @keyframes rotacion {
+    0% {
+      transform: rotate3d(0);
+    }
+    50% {
+      transform: rotate3d(0, 1, 0, 90deg);
+    }
+    100% {
+      transform: rotate3d(0);
+    }
+  }
+
+  @media (max-width: 380px) {
+    #header_mylogo {
+      width: 1.6rem;
+    }
+
+    .header_mylogo_container::after{
+      font-size: 0.7rem;
+      top: 24%;
+    }
+
+    .header_mylogo_container::before{
+      font-size: 0.7rem;
+      top: 24%;
+    }
+  }

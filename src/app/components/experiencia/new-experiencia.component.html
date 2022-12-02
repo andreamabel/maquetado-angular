@@ -1,0 +1,41 @@
+<section id="new_experiencia">
+    <div class="div1"></div>
+    <div class="div2"></div>
+    <div class="main row">
+        <div class="main_left col-12 col-md-5 p-5 text-center h-100">
+            <h3>Andrea Mabel</h3>
+            <img src="../../../assets/img_profile.jpg" class="img-fluid img_new_experiencia mb-2" alt="">
+            <h5>Daily Motivational</h5>
+            <p><b>"El único modo de hacer un gran trabajo es amar lo que haces"</b></p>
+            <p><b>- Steve Jobs -</b></p>
+        </div>
+        <div class="main_right col-12 col-md-7 bg-light">
+            <div class="main_right_cont px-3 gap-2">
+                <div class="d-flex w-100 justify-content-end mb-0">
+                    <button (click)="home()" class="btn_home badge bg-primary text-wrap">Home</button>
+                </div>
+                <h3 class="section_title">Añadir experiencia</h3>
+                <form (ngSubmit)="onCreate()" novalidate #f="ngForm" class="p-3 w-100">
+                    <div class="form-group mb-5">
+                        <label class="new_experiencia_label" for="nombreE"><b>Nombre de la Empresa</b></label>
+                        <input [(ngModel)]="nombreE" id="nombreE" class="form-control" type="text" name="nombreE"
+                            placeholder="Ej: Software Factory Enterprise" required />
+                    </div>
+                    <div class="form-group mb-5">
+                        <label class="new_experiencia_label" for="descripcionE"><b>Descripcion del puesto</b></label>
+                        <input [(ngModel)]="descripcionE" id="descripcionE" class="form-control" type="text"
+                            name="descripcionE" placeholder="Descripción" required />
+                    </div>
+                    <div class={{msjInformativeAddExp[1]}} id="resultAddExperiencia" style="height: 30px;">
+                        <b>{{msjInformativeAddExp[0]}}</b>
+                    </div>
+                    <div class="d-flex">
+                        <button class="start_new_experiencia w-100 mx-auto" type="submit" value="Submit">
+                            <b>Añadir experiencia</b>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>

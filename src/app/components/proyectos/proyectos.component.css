@@ -1,0 +1,102 @@
+.custom_container {
+    background-color: rgba(255, 192, 203, 0.541);
+    min-height: calc(100vh);
+    position: relative;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    /* box-shadow: inset 0 -15px 35px 5px white, 
+                0 15px 35px 5px pink; */
+    box-shadow: inset 0 -15px 35px 5px white, 
+                0 15px 55px 0px white;
+  }
+
+  .proyectos_container{
+    width: 100%;
+    height: 100%;
+    padding: 80px 0 40px;
+  }
+
+  .proyectos_banner {
+    background-image: url("../../../assets/bgbody.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+  }
+
+  .proyectos_grid_container{
+    width: 90%;
+    background: rgba(255, 192, 203, 0.75);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 192, 203, 0.3);
+  }
+  
+  .custom_container .section_title {
+    color: white;
+    font-size: 60px;
+  }
+
+  .proyectos_cont {
+    max-width: 100%;
+  }
+
+  .proyectos_item{
+    position: relative;
+    overflow: hidden;
+  }
+
+
+  .proyectos_description {
+    padding: 50px;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.7);
+    top: 300px;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: all 1s_;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    transition: all 1s;
+  }
+
+  .proyectos_description--title {
+    color: var(--neon-color);
+  }
+
+  .proyectos_description--text{
+    margin: 20px 0;
+    line-height: 30px;
+  }
+
+  .proyectos_item:hover .proyectos_description {
+    visibility: visible;
+    opacity: 1;
+    transition: all 1s;
+    transform: translateY(-300px);
+  }
+
+  .proyectos_img {
+    transition: all 1s;
+    /* filter: grayscale(1); */
+    object-fit: cover;
+    height: 100%;
+  }
+  .proyectos_item:hover .proyectos_img {
+    transition: all 1s;
+    transform: scale(1.3);
+  }

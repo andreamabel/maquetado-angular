@@ -1,0 +1,9 @@
+.header_logo{
+    width: 6rem;
+}
+
+@media (max-width: 380px) {
+    .header_logo{
+        width: 4rem;
+    }
+}

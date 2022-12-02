@@ -1,0 +1,50 @@
+<section id="login">
+    <div class="div1"></div>
+    <div class="div2"></div>
+    <!-- <div class="login_container"> -->
+        <div class="main row">
+            <div class="main_left col-12 col-md-5 p-5 text-center h-100">
+                <!-- <div class=""> -->
+                    <!-- <h2>Portfolio</h2> -->
+                    <h3>Andrea Mabel</h3>
+                    <img src="../../../assets/img_profile.jpg" class="img-fluid img_login mb-2" alt="">
+                    <h5>Daily Motivational</h5>
+                    <p><b>"El único modo de hacer un gran trabajo es amar lo que haces"</b></p>
+                    <p><b>- Steve Jobs -</b></p>
+                <!-- </div> -->
+            </div>
+            <div class="main_right col-12 col-md-7 bg-light">
+                <!-- <div class="p-3"> -->
+                    
+                    <div class="main_right_cont px-3 gap-2">
+                        <!-- <div class="d-flex justify-content-end">
+                            <a href="#">Register</a>
+                        </div> -->
+                        <div class="d-flex w-100 justify-content-end mb-0">
+                            <!-- (click)="home()" EN EL CLICK ESTABA HOME PARA VOLVER A LA HOME -->
+                            <button (click)="home()" class="btn_home badge bg-primary text-wrap">Home</button>
+                        </div>
+                        <h3 class="section_title">Log in</h3>
+                        <form #f="ngForm" (ngSubmit)="onLogin()" novalidate id="form_login" class="p-3 w-100" method="post" id="submit-name">
+                            <div class="form-group mb-5">
+                                <label class="login_label" for="nombreUsuario"><b>Email</b></label>
+                                <input id="nombreUsuario" class="form-control" type="email" name="nombreUsuario"
+                                    placeholder="john_doe@email.com" [(ngModel)]="nombreUsuario" required />
+                            </div>
+                            <div class="form-group mb-5">
+                                <label class="login_label" for="password"><b>Password</b></label>
+                                <input id="password" class="form-control" type="password" name="password"
+                                    placeholder="Your password ..." [(ngModel)]="password" required />
+                            </div>
+                            <div class={{errorMsjInformative[1]}} id="resultLogin" style="height: 30px;"><b>{{errorMsjInformative[0]}}</b></div>
+                            <div class="d-flex">
+                                <button class="start_login w-100 mx-auto" type="submit"
+                                    value="Submit"><b>Login</b></button>
+                            </div>
+                        </form>
+                    </div>
+                <!-- </div> -->
+            </div>
+        </div>
+    <!-- </div> -->
+</section>

@@ -1,0 +1,13 @@
+.btn_login{
+    width: auto;
+    /* border-color: white; */
+    height: 2rem;
+    font-size: .9rem;
+}
+
+@media (max-width: 380px) {
+    .btn_login{
+        height: 1.5rem;
+        font-size: .7rem;
+    }  
+}

@@ -1,0 +1,8 @@
+<div>
+    <button (click)="login()" *ngIf="!isLogged" class="btn_login badge bg-primary text-wrap">
+        Login
+    </button>
+    <button (click)="onLogout()" *ngIf="isLogged" class="btn_login badge bg-primary text-wrap">
+        Logout
+    </button>
+</div>

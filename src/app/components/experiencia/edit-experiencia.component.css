@@ -1,0 +1,120 @@
+#experiencia{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* min-height: 100vh; */
+    height: 100vh;
+}
+
+.div1{
+    position:absolute;
+    left: 0;
+    width: 43.36%;
+    height: 100%;
+    background: rgb(255, 192, 203);
+    z-index:-1;
+}
+
+.div2{
+    position:absolute;
+    right: 0;
+    width: calc(100% - 43.36%);
+    height: 100%;
+    background:white;
+    z-index:-1;
+}
+
+.main{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+    box-shadow: 0px 0px 35px 15px rgba(0,0,0,0.28);
+    -webkit-box-shadow: 0px 0px 35px 15px rgba(0,0,0,0.28);
+    -moz-box-shadow: 0px 0px 35px 15px rgba(0,0,0,0.28);
+    color: rgb(71, 71, 71);
+    outline: 1px solid white;
+    /* min-width: 75%;
+    min-height: 75%; */
+    width: 80%;
+    height: 80%;
+
+    /* max-width: 75%;
+    max-height: 75%; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* padding: 40px 0; */
+}
+
+.main_left {
+    background: rgb(255, 192, 203);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+}
+
+.img_experiencia {
+    max-width: 30%;
+    border-radius: 8px;
+}
+
+.main_right {
+    height: 100%;
+    background-color: red;
+    /* background-color: #f8f9fa; */
+}
+
+.main_right a {
+    text-decoration: none;
+}
+
+.main_right_cont{
+    
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn_home{
+    /* width: 4rem; */
+    /* border-color: white; */
+    /* height: 2rem; */
+    font-size: .9rem;
+}
+
+.section_title{
+    margin: 15px 0;
+    text-align: center;
+}
+
+.experiencia_label{
+    margin-bottom: 10px;
+}
+
+.start_experiencia{
+    background-color: rgb(255, 192, 203);
+    border:none;
+    padding: 10px 0;
+    transition: box-shadow 1s ease;
+}
+
+.start_experiencia:hover{
+    box-shadow: 0px 0px 15px 5px rgba(0,0,0,0.28);
+    -webkit-box-shadow: 0px 0px 15px 5px rgba(0,0,0,0.28);
+    -moz-box-shadow: 0px 0px 15px 5px rgba(0,0,0,0.28);
+}
+
+@media (max-width: 767px) {
+    .main{
+        width: 85%;
+        height: 85%;
+    }
+    .main_left{
+        display: none;
+    }
+}

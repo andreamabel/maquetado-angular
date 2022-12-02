@@ -1,0 +1,17 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Niconne&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+body{
+    /* background-image: url('./assets/bgbody.jpg'); */
+    background-color: pink;
+    font-family: 'Roboto', sans-serif;
+    color: rgb(255, 255, 255);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+html{
+    scroll-behavior: smooth;
+}

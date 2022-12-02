@@ -1,0 +1,24 @@
+<section id="experiencia" class="custom_container">
+    <div class="experiencia_banner"></div>
+    <div class="experiencia_container d-flex">
+        <div class="experiencia_grid_container d-flex justify-content-center align-items-center mx-auto p-3 row">
+            
+            <h2 class="col-12 section_title" style="font-family: 'Niconne', cursive;">Experiencia Laboral</h2>
+            <div class="col-lg-2">
+                <button type="button" class="btn btn-dark mb-2" routerLink="/nuevaexp" *ngIf="isLogged">
+                    Nueva experiencia
+                </button>
+            </div>
+            <div class="col-12 row gap-3 d-flex justify-content-around align-items-center mx-auto">
+                <div *ngFor="let Experiencia of expe"
+                    class="experiencia_card col-12 col-md-5 p-3 d-flex flex-column align-items-center justify-content-center">
+                    <h4>{{Experiencia.nombreE}}</h4>
+                    <p class="p_contraste">{{Experiencia.descripcionE}}</p>
+                    <button *ngIf="isLogged" routerLink="/editexp/{{Experiencia.id}}" class="btn btn-success mb-2" >Editar</button>
+                    
+                    <button *ngIf="isLogged" (click)="delete(Experiencia.id)" class="btn btn-danger mb-2">Eliminar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
